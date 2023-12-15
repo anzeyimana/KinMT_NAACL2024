@@ -1,0 +1,11 @@
+python3 kin2en_ddp_trainer.py \
+  -g 8 \
+  --load-saved-model=false \
+  --kinmt-batch-max-tokens=4096 \
+  --kinmt-accumulation-steps=8 \
+  --kinmt-use-bert=false \
+  --kinmt-use-gpt=false \
+  --use-cross-positional-attn-bias=false \
+  --kinmt-use-copy-loss=false \
+  --kinmt-use-names-data=true \
+  --kinmt-model-name="kin2en_base_no_bert_no_gpt_no_xpos_2023-04-30"

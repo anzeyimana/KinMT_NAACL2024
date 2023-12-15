@@ -1,0 +1,18 @@
+python3 en2kin_gradvac_trainer.py \
+  -g 8 \
+  --load-saved-model=false \
+  --kinmt-batch-max-tokens=2048 \
+  --kinmt-accumulation-steps=16 \
+  --kinmt-use-bert=true \
+  --kinmt-use-gpt=false \
+  --use-cross-positional-attn-bias=true \
+  --kinmt-use-copy-loss=false \
+  --kinmt-use-names-data=true \
+  --kinmt-use-foreign-terms=false \
+  --kinmt-use-eval-data=false \
+  --kinmt-num-train-epochs=40 \
+  --kinmt-lexical-multiplier=1 \
+  --kinmt-peak-lr=0.0005 \
+  --kinmt-warmup-steps=8000 \
+  --kinmt-extra-train-data-key="morpho_clean_corpus_2023-08-10" \
+  --kinmt-model-name="en2kin_backtrans_bfloat16_2023-08-10"

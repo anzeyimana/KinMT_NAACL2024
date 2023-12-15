@@ -1,0 +1,18 @@
+python3 en2kin_trainer.py \
+  -g 8 \
+  --load-saved-model=false \
+  --kinmt-batch-max-tokens=2048 \
+  --kinmt-accumulation-steps=16 \
+  --kinmt-use-bert=true \
+  --kinmt-use-gpt=false \
+  --use-cross-positional-attn-bias=true \
+  --kinmt-use-copy-loss=false \
+  --kinmt-use-names-data=true \
+  --kinmt-use-foreign-terms=false \
+  --kinmt-use-eval-data=false \
+  --kinmt-num-train-epochs=24 \
+  --kinmt-lexical-multiplier=2 \
+  --kinmt-peak-lr=0.001 \
+  --kinmt-warmup-steps=8000 \
+  --kinmt-extra-train-data-key="morpho_corpus_sentences_clean_2023-05-02" \
+  --kinmt-model-name="en2kin_base_back_trans_eval_bert_xpos_2023-06-08"

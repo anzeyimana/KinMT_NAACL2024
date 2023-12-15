@@ -1,0 +1,15 @@
+python3 en2kin_trainer.py \
+  -g 8 \
+  --load-saved-model=false \
+  --kinmt-batch-max-tokens=4096 \
+  --kinmt-accumulation-steps=8 \
+  --kinmt-use-bert=false \
+  --kinmt-use-gpt=false \
+  --use-cross-positional-attn-bias=true \
+  --kinmt-use-copy-loss=false \
+  --kinmt-use-names-data=true \
+  --kinmt-use-foreign-terms=false \
+  --kinmt-use-eval-data=false \
+  --kinmt-num-train-epochs=24 \
+  --kinmt-peak-lr=0.0008 \
+  --kinmt-model-name="en2kin_base_eval_no_bert_xpos_2023-06-26"

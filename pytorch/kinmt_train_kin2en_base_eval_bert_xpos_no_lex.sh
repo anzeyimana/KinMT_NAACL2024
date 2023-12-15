@@ -1,0 +1,16 @@
+python3 kin2en_ddp_trainer.py \
+  -g 8 \
+  --load-saved-model=false \
+  --kinmt-batch-max-tokens=2048 \
+  --kinmt-accumulation-steps=16 \
+  --kinmt-use-bert=true \
+  --kinmt-use-gpt=false \
+  --use-cross-positional-attn-bias=true \
+  --kinmt-use-copy-loss=false \
+  --kinmt-use-names-data=true \
+  --kinmt-use-foreign-terms=true \
+  --kinmt-num-train-epochs=24 \
+  --kinmt-bert-large=false \
+  --kinmt-lexical-multiplier=0 \
+  --kinmt-peak-lr=0.001 \
+  --kinmt-model-name="kin2en_base_eval_bert_xpos_no_lex_2023-07-05"
